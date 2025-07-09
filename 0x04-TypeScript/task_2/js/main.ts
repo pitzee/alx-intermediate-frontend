@@ -63,3 +63,15 @@ function executeWork(employee: Director | Teacher): string {
     return employee.workTeacherTasks();
   }
 }
+
+// 1. Define the string literal type
+type Subjects = "Math" | "History";
+
+// 2. Define the function
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else {
+    return "Teaching History";
+  }
+}
